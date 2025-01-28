@@ -424,135 +424,129 @@
         <div class="spacer"></div>
 
         <!-- ATTRIBUTE FIELDS -->
-        <div class="corporeal">
-            <div class="section-header" data-i18n="attributes-u">ATTRIBUTES</div>
-            <div class="attributes">
-                <div class="attributes-category power" data-i18n="power">Power</div>
-                <div class="attributes-category finesse" data-i18n="finesse">Finesse</div>
-                <div class="attributes-category resistance" data-i18n="resistance">Resistance</div>
-                <div class="mental border"></div>
-                <div class="power mental label">
-                    <input type="hidden" class="flag" name="attr_intelligence_flag" value="0" />
-                    <button type="action" class="toggle" name="act_intelligence" data-i18n="intelligence">Intelligence</button>
-                </div>
-                <div class="power mental dots">
-                    <input type="hidden" name="attr_intelligence" value="1" />
-                    <button type="action" class="dot zero" name="act_intelligence-0">×</button>
-                    <button type="action" class="dot" name="act_intelligence-1"></button>
-                    <button type="action" class="dot ne-1" name="act_intelligence-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_intelligence-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_intelligence-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_intelligence-5"></button>
-                </div>
-                <div class="finesse mental label">
-                    <input type="hidden" class="flag" name="attr_wits_flag" value="0" />
-                    <button type="action" class="toggle" name="act_wits" data-i18n="wits">Wits</button>
-                </div>
-                <div class="finesse mental dots">
-                    <input type="hidden" name="attr_wits" value="1" />
-                    <button type="action" class="dot zero" name="act_wits-0">×</button>
-                    <button type="action" class="dot" name="act_wits-1"></button>
-                    <button type="action" class="dot ne-1" name="act_wits-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_wits-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_wits-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_wits-5"></button>
-                </div>
-                <div class="resistance mental label">
-                    <input type="hidden" class="flag" name="attr_resolve_flag" value="0" />
-                    <button type="action" class="toggle" name="act_resolve" data-i18n="resolve">Resolve</button>
-                </div>
-                <div class="resistance mental dots">
-                    <input type="hidden" name="attr_resolve" value="1" />
-                    <button type="action" class="dot zero" name="act_resolve-0">×</button>
-                    <button type="action" class="dot" name="act_resolve-1"></button>
-                    <button type="action" class="dot ne-1" name="act_resolve-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_resolve-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_resolve-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_resolve-5"></button>
-                </div>
-                <div class="physical border"></div>
-                <div class="power physical label">
-                    <input type="hidden" class="flag" name="attr_strength_flag" value="0" />
-                    <button type="action" class="toggle" name="act_strength" data-i18n="strength">Strength</button>
-                </div>
-                <div class="power physical dots">
-                    <input type="hidden" name="attr_strength" value="1" />
-                    <button type="action" class="dot zero" name="act_strength-0">×</button>
-                    <button type="action" class="dot" name="act_strength-1"></button>
-                    <button type="action" class="dot ne-1" name="act_strength-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_strength-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_strength-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_strength-5"></button>
-                </div>
-                <div class="finesse physical label">
-                    <input type="hidden" class="flag" name="attr_dexterity_flag" value="0" />
-                    <button type="action" class="toggle" name="act_dexterity" data-i18n="dexterity">Dexterity</button>
-                </div>
-                <div class="finesse physical dots">
-                    <input type="hidden" name="attr_dexterity" value="1" />
-                    <button type="action" class="dot zero" name="act_dexterity-0">×</button>
-                    <button type="action" class="dot" name="act_dexterity-1"></button>
-                    <button type="action" class="dot ne-1" name="act_dexterity-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_dexterity-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_dexterity-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_dexterity-5"></button>
-                </div>
-                <div class="resistance physical label">
-                    <input type="hidden" class="flag" name="attr_stamina_flag" value="0" />
-                    <button type="action" class="toggle" name="act_stamina" data-i18n="stamina">Stamina</button>
-                </div>
-                <div class="resistance physical dots">
-                    <input type="hidden" name="attr_stamina" value="1" />
-                    <button type="action" class="dot zero" name="act_stamina-0">×</button>
-                    <button type="action" class="dot" name="act_stamina-1"></button>
-                    <button type="action" class="dot ne-1" name="act_stamina-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_stamina-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_stamina-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_stamina-5"></button>
-                </div>
-                <div class="social border"></div>
-                <div class="power social label">
-                    <input type="hidden" class="flag" name="attr_presence_flag" value="0" />
-                    <button type="action" class="toggle" name="act_presence" data-i18n="presence">Presence</button>
-                </div>
-                <div class="power social dots">
-                    <input type="hidden" name="attr_presence" value="1" />
-                    <button type="action" class="dot zero" name="act_presence-0">×</button>
-                    <button type="action" class="dot" name="act_presence-1"></button>
-                    <button type="action" class="dot ne-1" name="act_presence-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_presence-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_presence-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_presence-5"></button>
-                </div>
-                <div class="finesse social label">
-                    <input type="hidden" class="flag" name="attr_manipulation_flag" value="0" />
-                    <button type="action" class="toggle" name="act_manipulation" data-i18n="manipulation">Manipulation</button>
-                </div>
-                <div class="finesse social dots">
-                    <input type="hidden" name="attr_manipulation" value="1" />
-                    <button type="action" class="dot zero" name="act_manipulation-0">×</button>
-                    <button type="action" class="dot" name="act_manipulation-1"></button>
-                    <button type="action" class="dot ne-1" name="act_manipulation-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_manipulation-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_manipulation-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_manipulation-5"></button>
-                </div>
-                <div class="resistance social label">
-                    <input type="hidden" class="flag" name="attr_composure_flag" value="0" />
-                    <button type="action" class="toggle" name="act_composure" data-i18n="composure">Composure</button>
-                </div>
-                <div class="resistance social dots">
-                    <input type="hidden" name="attr_composure" value="1" />
-                    <button type="action" class="dot zero" name="act_composure-0">×</button>
-                    <button type="action" class="dot" name="act_composure-1"></button>
-                    <button type="action" class="dot ne-1" name="act_composure-2"></button>
-                    <button type="action" class="dot ne-1 ne-2" name="act_composure-3"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3" name="act_composure-4"></button>
-                    <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_composure-5"></button>
-                </div>
-            </div>
-        </div>
+<div class="corporeal">
+    <!-- Input field for setting the maximum number of buttons -->
+    <div class="max-buttons-input">
+        <label for="max-buttons" data-i18n="max-buttons-label">Max Buttons per Attribute:</label>
+        <input type="number" id="max-buttons" name="attr_max_buttons" min="1" max="10" value="5" />
+    </div>
 
+    <div class="section-header" data-i18n="attributes-u">ATTRIBUTES</div>
+    <div class="attributes">
+        <div class="attributes-category power" data-i18n="power">Power</div>
+        <div class="attributes-category finesse" data-i18n="finesse">Finesse</div>
+        <div class="attributes-category resistance" data-i18n="resistance">Resistance</div>
+        <div class="mental border"></div>
+        <div class="power mental label">
+            <input type="hidden" class="flag" name="attr_intelligence_flag" value="0" />
+            <button type="action" class="toggle" name="act_intelligence" data-i18n="intelligence">Intelligence</button>
+        </div>
+        <div class="power mental dots" data-attribute="intelligence">
+            <input type="hidden" name="attr_intelligence" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="finesse mental label">
+            <input type="hidden" class="flag" name="attr_wits_flag" value="0" />
+            <button type="action" class="toggle" name="act_wits" data-i18n="wits">Wits</button>
+        </div>
+        <div class="finesse mental dots" data-attribute="wits">
+            <input type="hidden" name="attr_wits" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="resistance mental label">
+            <input type="hidden" class="flag" name="attr_resolve_flag" value="0" />
+            <button type="action" class="toggle" name="act_resolve" data-i18n="resolve">Resolve</button>
+        </div>
+        <div class="resistance mental dots" data-attribute="resolve">
+            <input type="hidden" name="attr_resolve" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="physical border"></div>
+        <div class="power physical label">
+            <input type="hidden" class="flag" name="attr_strength_flag" value="0" />
+            <button type="action" class="toggle" name="act_strength" data-i18n="strength">Strength</button>
+        </div>
+        <div class="power physical dots" data-attribute="strength">
+            <input type="hidden" name="attr_strength" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="finesse physical label">
+            <input type="hidden" class="flag" name="attr_dexterity_flag" value="0" />
+            <button type="action" class="toggle" name="act_dexterity" data-i18n="dexterity">Dexterity</button>
+        </div>
+        <div class="finesse physical dots" data-attribute="dexterity">
+            <input type="hidden" name="attr_dexterity" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="resistance physical label">
+            <input type="hidden" class="flag" name="attr_stamina_flag" value="0" />
+            <button type="action" class="toggle" name="act_stamina" data-i18n="stamina">Stamina</button>
+        </div>
+        <div class="resistance physical dots" data-attribute="stamina">
+            <input type="hidden" name="attr_stamina" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="social border"></div>
+        <div class="power social label">
+            <input type="hidden" class="flag" name="attr_presence_flag" value="0" />
+            <button type="action" class="toggle" name="act_presence" data-i18n="presence">Presence</button>
+        </div>
+        <div class="power social dots" data-attribute="presence">
+            <input type="hidden" name="attr_presence" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="finesse social label">
+            <input type="hidden" class="flag" name="attr_manipulation_flag" value="0" />
+            <button type="action" class="toggle" name="act_manipulation" data-i18n="manipulation">Manipulation</button>
+        </div>
+        <div class="finesse social dots" data-attribute="manipulation">
+            <input type="hidden" name="attr_manipulation" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+        <div class="resistance social label">
+            <input type="hidden" class="flag" name="attr_composure_flag" value="0" />
+            <button type="action" class="toggle" name="act_composure" data-i18n="composure">Composure</button>
+        </div>
+        <div class="resistance social dots" data-attribute="composure">
+            <input type="hidden" name="attr_composure" value="1" />
+            <!-- Buttons will be dynamically generated here -->
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to dynamically generate buttons -->
+<script type="text/worker">
+    // Function to generate buttons for an attribute
+    const generateButtons = (attribute, maxButtons) => {
+        const dotsContainer = document.querySelector(`.dots[data-attribute="${attribute}"]`);
+        dotsContainer.innerHTML = `<input type="hidden" name="attr_${attribute}" value="1" />
+                                   <button type="action" class="dot zero" name="act_${attribute}-0">×</button>`;
+
+        for (let i = 1; i <= maxButtons; i++) {
+            const button = document.createElement("button");
+            button.type = "action";
+            button.className = "dot";
+            if (i > 1) button.classList.add(`ne-${i - 1}`);
+            button.name = `act_${attribute}-${i}`;
+            dotsContainer.appendChild(button);
+        }
+    };
+
+    // Function to update all attributes based on the max buttons value
+    const updateAllAttributes = (maxButtons) => {
+        const attributes = ["intelligence", "wits", "resolve", "strength", "dexterity", "stamina", "presence", "manipulation", "composure"];
+        attributes.forEach(attr => generateButtons(attr, maxButtons));
+    };
+
+    // Listen for changes to the max buttons input field
+    on("change:max_buttons", () => {
+        const maxButtons = parseInt(getAttrs(["max_buttons"]).max_buttons || 5, 10);
+        updateAllAttributes(maxButtons);
+    });
+
+    // Initialize buttons with the default value
+    updateAllAttributes(5);
+</script>
         <!-- SIMPLE ATTRIBUTE FIELDS -->
         <!-- ephemeral and organization -->
         <div class="corporeal-inverse columns">
@@ -1172,6 +1166,24 @@
                                     </div>
                                 </fieldset>
                             </div>
+                                <!-- DEVOTIONS -->
+                                <div>
+                                <div class="subheader" data-i18n="devotions">Devotions</div>
+                                <fieldset class="repeating_devotions">
+                                    <div class="input-group">
+                                        <input type="text" name="attr_devotion_name" />
+                                        <div class="dots">
+                                            <input type="hidden" name="attr_devotion" value="0">
+                                            <button type="action" class="dot zero" name="act_devotion-0">&times;</button>
+                                            <button type="action" class="dot" name="act_merit-1"></button>
+                                            <button type="action" class="dot ne-1" name="act_merit-2"></button>
+                                            <button type="action" class="dot ne-1 ne-2" name="act_merit-3"></button>
+                                            <button type="action" class="dot ne-1 ne-2 ne-3" name="act_merit-4"></button>
+                                            <button type="action" class="dot ne-1 ne-2 ne-3 ne-4" name="act_merit-5"></button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
                             <div class="horizontal-spacer"></div>
                             <!-- OTHER TRAITS -->
                             <div>
@@ -1573,6 +1585,34 @@
                                 <div><input type="text" name="attr_armor_defense2" /></div>
                                 <div><input type="text" name="attr_armor_speed2" /></div>
                                 <div><input type="text" name="attr_armor_description2" /></div>
+
+                                <div class="checkbox">
+                                    <input type="hidden" name="attr_armor_flag3">
+                                    <button type="action" name="act_armor_flag3"></button>
+                                </div>
+                                <div>
+                                    <input type="hidden" class="flag" name="attr_armor_flag3" value="0">
+                                    <input type="text" class="toggle" name="attr_armor_name3" />
+                                </div>
+                                <div><input type="text" name="attr_armor_ballistic3" />/<input type="text" name="attr_armor_general3" /></div>
+                                <div><input type="text" name="attr_armor_strength3" /></div>
+                                <div><input type="text" name="attr_armor_defense3" /></div>
+                                <div><input type="text" name="attr_armor_speed3" /></div>
+                                <div><input type="text" name="attr_armor_description3" /></div>
+
+                                <div class="checkbox">
+                                    <input type="hidden" name="attr_armor_flag4">
+                                    <button type="action" name="act_armor_flag4"></button>
+                                </div>
+                                <div>
+                                    <input type="hidden" class="flag" name="attr_armor_flag4" value="0">
+                                    <input type="text" class="toggle" name="attr_armor_name4" />
+                                </div>
+                                <div><input type="text" name="attr_armor_ballistic4" />/<input type="text" name="attr_armor_general4" /></div>
+                                <div><input type="text" name="attr_armor_strength4" /></div>
+                                <div><input type="text" name="attr_armor_defense4" /></div>
+                                <div><input type="text" name="attr_armor_speed4" /></div>
+                                <div><input type="text" name="attr_armor_description4" /></div>
                             </div>
                         </div>
                    </div>
@@ -1762,7 +1802,7 @@
                             <div class="subheader">
                                 <span class="game-line mortal1 hunter1" data-i18n="morality">Morality</span>
                                 <span class="game-line mortal2 mortal2-ghost hunter2" data-i18n="integrity">Integrity</span>
-                                <span class="game-line vampire" data-i18n="humanity">Humanity</span>
+                                <span class="game-line vampire" data-i18n="humanity">Path/Humanity</span>
                                 <span class="game-line promethean1" data-i18n="humanity">Humanity</span>
                                 <span class="game-line promethean2" data-i18n="pilgrimage">Pilgrimage</span>
                                 <span class="game-line werewolf" data-i18n="harmony">Harmony</span>
